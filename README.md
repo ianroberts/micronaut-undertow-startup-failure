@@ -46,7 +46,7 @@ Any of the following will avoid the error:
 
 - Do not set `micronaut.server.host` in application.yml (though then the app binds only to localhost by default)
 - Disable IPv6 with `-Djava.net.preferIPv4Stack=true`
-- Configure the logger for `io.micronaut.runtime.Micronaut` to be `ERROR` or higher
+- Configure the logger for `io.micronaut.runtime.Micronaut` to be `WARN` or higher
   - this fixes it because the failing call to `UndertowServer.getURL` is guarded by an `if(LOG.isInfoEnabled())`
 
 ## Analysis
