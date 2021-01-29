@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: undertowStartupBug
+  server:
+    host: 0.0.0.0
